@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>www.sg47-louvre-virtual-museum.com</title>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="fixed-bar">
+            <ul class="top-menu">
+                <li id="home" class="menu-text"><a class="menu-text" href="Omma.html">Home</a></li>
+                <li id="about" class="menu-text">Chi siamo</li>
+                <li id="location" class="menu-text">Dove trovarci</li>
+                <li id="info" class="menu-text">Informazioni</li>
+                <li id="contacts" class="menu-text">Contatti</li>
+            </ul>
+        </div>
+        <div class="scrollable-bar">
+            <img class="second-image" id="first-image" src="bg1.jpg">
+            <img class="second-image hide" id="second-image" src="bg2.jpg">
+            <img class="second-image hide" id="third-image" src="bg3.jpg">
+            <img class="second-image hide" id="fourth-image" src="bg4.jpg">
+            <img class="second-image hide" id="fifth-image" src="bg5.jpg">
+            <button class="next-image" id="next-image">></button>
+        </div>
+    </header>
+    <h1 class="title" style="margin-left: 200px;">Museo di Louvre</h1><br><br><br>
+    <div class="container" id="search-container">
+        <h1 class="title" style="font-size: 3em;"><marquee behavior="scroll" direction="right" style="width: 650px;">Cerca opere</marquee></h1>
+         <input id="search" onkeyup="filter()" type="text" placeholder="🔍Cerca opere">
+         <ul id="Menu">
+            <li id="la-libertà-che-guida-il-popolo" class="vertical-align"><img src="opera2.jpg" class="right-images painting" width="600px" alt=""><br><br><br><p style="font-size: 30px; margin-left: 630px; width: 200px; margin-top: 40px;">La Libertà che guida il popolo</p></li>
+            <li id="la-zattera-della-medusa" class="vertical-align"><img src="opera3.jpg" class="right-images painting" width="600px" alt=""><br><br><br><p style="font-size: 30px; margin-left: 630px; width: 200px;">La Zattera della medusa</p></li>
+            <li id="nozze-di-cana" class="vertical-align"><img src="opera5.jpg" class="right-images painting" width="600px" alt=""><br><br><br><p style="font-size: 30px; margin-left: 630px; width: 200px;">Nozze di Cana</p></li>
+            
+           <li id="nike-di-samotracia"><img src="bg3.jpg" class="left-images painting" width="250px" height="450px" alt=""><br><br><br><p style="margin-left: -198px; font-size: 30px;">Nike di Samotracia</p></li>
+           <li id="gioconda"><img src="opera1.jpg" class="left-images painting" width="250px" height="450px" alt=""><br><br><br><p style="font-size: 30px; margin-left: -180px;">Gioconda</p></li>
+           <li id="amore-e-psiche"><img src="opera4.jpg" class="left-images painting" width="250px" height="450px" alt="" style="margin-top: 1900px;"><br><br><br><p style="font-size: 30px; margin-left: -180px;">Amore e Psiche</p></li>
+        </ul>
+         <p id="nike-di-samotracia-description" class="hide description" style="margin-top: 100px;">
+            <b>Autore:</b>	Sconosciuto <br>
+            <b>Data:</b>	II secolo a.C. circa <br>
+            <b>Materiale:</b>	Marmo pario <br>
+            <b>Altezza:</b>	245 cm <br>
+            <b>Ubicazione:</b>	Museo del Louvre, Parigi <br><br>
+            <a href="nike-di-samotracia.html">ulteriori informazioni</a>
+        </p>
+        <p id="gioconda-description" class="hide description" style="margin-top: 800px;">
+           <b>Autore:</b>	Leonardo da Vinci <br>
+           <b>Data:</b>	1503-1506 circa <br>
+           <b>Tecnica:</b>	olio su tavola di pioppo <br>
+            <b>Dimensioni:</b>	77×53 cm <br>
+            <b>Ubicazione:</b>	Museo del Louvre, Parigi <br><br>
+            <a href="gioconda.html">ulteriori informazioni</a>
+        </p>
+        <p id="la-libertà-che-guida-il-popolo-description" class="hide description" style="margin-left: 620px;">
+            <b>Artista:</b> Eugène Delacroix <br>
+            <b>Dimensioni:</b> 2,6 m x 3,25 m <br>
+            <b>Periodo:</b> Romanticismo <br>
+            <b>Data di creazione:</b> 1830 <br> 
+            <b>Soggetto:</b> Francesi, Rivoluzione di luglio, Marianne <br> 
+            <b>Luoghi:</b> Museo del Louvre (dal 2013), Louvre-Lens (2012–2013), Museo del Louvre (1874–2012), Museo del Louvre <br><br>
+            <a href="la-libertà-che-guida-il-popolo.html">ulteriori informazioni</a>
+        </p>
+        <p id="la-zattera-della-medusa-description" class="hide description" style="margin-left: 620px; margin-top: 1150px;">
+            <b>Autore:</b>	Théodore Géricault <br>
+            <b>Data:</b>	1819 <br>
+            <b>Tecnica:	</b>olio su tela <br>
+            <b>Dimensioni:</b>	491×716 cm <br>
+            <b>Ubicazione:</b>	Museo del Louvre, Parigi <br><br>
+            <a href="la-zattera-della-medusa.html">ulteriori informazioni</a>
+        </p>
+        <p id="amore-e-psiche-description" class="hide description" style="margin-top: 1950px;">
+            <b>Autore:</b>	Antonio Canova <br>
+            <b>Data:</b>	1787-1793 <br>
+            <b>Materiale:</b>	marmo bianco <br>
+            <b>Altezza:</b>	155 cm <br>
+            <b>Ubicazione:</b>	Louvre, Parigi <br><br>
+            <a href="amore-e-psiche.html">ulteriori informazioni</a>
+        </p>
+        <p id="nozze-di-cana-description" class="hide description" style="margin-left: 620px; margin-top: 1950px;">
+            <b>Autore:</b>	Paolo Veronese <br>
+            <b>Data:</b>	1563 <br>
+            <b>Tecnica:</b>	olio su tela <br>
+            <b>Dimensioni:</b>	666×990 cm <br>
+            <b>Ubicazione:</b>	Museo del Louvre, Parigi <br><br>
+            <a href="nozze-di-cana.html">ulteriori informazioni</a>
+        </p>
+    </div><br><br><br>
+<hr style="margin-top:2600px">
+    <br><br><br>
+    <p class="text">Visita il museo con Google maps</p>
+<hr>
+    <br><br>
+    <div style="display: flex;">
+    <a class="map-explore" href="https://www.google.com/maps/@48.8610104,2.3343409,3a,75y,97.45h,90.25t/data=!3m11!1e1!3m9!1sAF1QipNUd_V3HvALCG4r5lXXPPyO1voIKsC59YxNPEoL!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNUd_V3HvALCG4r5lXXPPyO1voIKsC59YxNPEoL%3Dw203-h100-k-no-pi-0-ya351.74115-ro0-fo100!7i5472!8i2736!9m2!1b1!2i50" target="_blank"><img width="400px" src="louvreView1.jpg" alt=""><p class="map-explore-text">Esplora su Maps</p></a>
+    <a class="map-explore" href="https://www.google.com/maps/@48.8598431,2.3369876,3a,75y,194.08h,70.37t/data=!3m11!1e1!3m9!1sAF1QipOv5Unvj1rydUqGRfxMpheCYIGyKAAsN9HFOQ2u!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOv5Unvj1rydUqGRfxMpheCYIGyKAAsN9HFOQ2u%3Dw203-h100-k-no-pi-0-ya72.449524-ro-0-fo100!7i5000!8i2500!9m2!1b1!2i24" target="_blank"><img width="400px" src="louvreView2.jpg" alt=""><p class="map-explore-text">Esplora su Maps</p></a>
+    </div>
+</body>
+<footer style="margin-top: 100px;">
+    <ul class="footer-menu" id="footer-menu">
+        <li class="footer-content"> © Copyright - tutti i diritti riservati</li>
+        <li ><a class="footer-content" href="mailto:">Email</a></li>
+        <li ><a class="footer-content" href="">Youtube</a></li>
+        <li ><a class="footer-content" href="">Instagram</a></li>
+        <li ><a class="footer-content" href="">Facebook</a></li>
+        <li ><a class="footer-content" href="">Twitter</a></li>
+    </ul>
+</footer>
+</html>
