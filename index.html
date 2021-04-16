@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sasafy</title>
+</head>
+<body>
+    <p style="opacity: 0;">.</p>
+    <div class="container">
+        <div class="title">
+            <h1>Sasafy</h1>
+        </div>
+        <div class="volume-container">
+            <input type="number" min="0" max="1" value="0.5" class="volume-input" id="volume-input">
+            <p><div class="lower-volume" id="lower-volume">- </div><input type="range" name="volume" min="0" max="10" value="5" class="volume" id="volume"><div class="rise-volume" id="rise-volume"> +</div></p>
+        </div>
+        <div class="audio-container">
+            <div class="music-containers">
+
+
+
+                <div class="music-container">
+                    <div class="play-music" id="play-music">&#9658;</div>
+                    <audio src="The-piano.lady.mp3" id="the-piano-lady"></audio>
+                    <div class="info-container">
+                        <p>The Piano Lady</p>
+                        <p>Lena Orsa</p>
+                        <p>/</p>
+                    </div>
+                    <input type="range" step="any" id="the-piano-lady-seekbar" value="0"><p id="time">0s</p>
+                </div>
+
+
+                <div class="music-container">
+                    <div class="play-music1" id="play-music1">&#9658;</div>
+                    <audio src="Dance_With_Me.mp3" id="dance-with-me"></audio>
+                    <div class="info-container1">
+                        <p>Dance With Me</p>
+                        <p>THE SAME PERSONS</p>
+                        <p>/</p>
+                    </div>
+                    <input type="range" step="any" id="dance-with-me-seekbar" value="0"><p id="time1">0s</p>
+                </div>
+
+
+                <div class="music-container">
+                    <div class="play-music2" id="play-music2">&#9658;</div>
+                    <audio src="Chemistry.mp3" id="chemistry"></audio>
+                    <div class="info-container2">
+                        <p>Chemistry</p>
+                        <p>MOONPROSOUNDS</p>
+                        <p>/</p>
+                    </div>
+                    <input type="range" step="any" id="chemistry-seekbar" value="0"><p id="time2">0s</p>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            &copy; Copyright 2021 - all rights reserved
+        </div>
+    </div>
+</body>
+</html>

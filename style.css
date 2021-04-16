@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #3DFF1F;
+    background: -moz-linear-gradient(left, #3DFF1F 0%, #82D013 38%, #CEC707 100%);
+    background: -webkit-linear-gradient(left, #3DFF1F 0%, #82D013 38%, #CEC707 100%);
+    background: linear-gradient(to right, #3DFF1F 0%, #82D013 38%, #CEC707 100%);
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+    margin-top: 4%;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    background: #720000;
+    background: -moz-linear-gradient(top, #720000 0%, #963508 50%, #C59237 100%);
+    background: -webkit-linear-gradient(top, #720000 0%, #963508 50%, #C59237 100%);
+    background: linear-gradient(to bottom, #720000 0%, #963508 50%, #C59237 100%);
+    height: 70vh;
+    width: 70%;
+    -webkit-box-shadow: 17px 17px 30px 1px #000000; 
+    box-shadow: 17px 17px 30px 1px #000000;
+    border-radius: 11px;
+}
+
+.title {
+    position: absolute;
+    top: -120px;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 3px 0 #2fa711, 1px 13px 5px #108101;
+    color: #f7f200;
+}
+
+.volume-container {
+    position: absolute;
+    top: 20%;
+    left :50%;
+    transform: translate(-8%, -50%);
+    width: 100%;
+}
+
+input[type=range].volume {
+    width: 100p;
+    margin: 5.85px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type=range].volume:focus {
+    outline: none;
+  }
+  input[type=range].volume::-webkit-slider-runnable-track {
+    background: #ce9935;
+    border: 0;
+    border-radius: 7.6px;
+    width: 100%;
+    height: 8.3px;
+    cursor: pointer;
+  }
+  input[type=range].volume::-webkit-slider-thumb {
+    margin-top: -5.85px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range].volume:focus::-webkit-slider-runnable-track {
+    background: #ce9935;
+  }
+  input[type=range].volume::-moz-range-track {
+    background: #ce9935;
+    border: 0;
+    border-radius: 7.6px;
+    width: 100%;
+    height: 8.3px;
+    cursor: pointer;
+  }
+  input[type=range].volume::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  input[type=range].volume::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 15.35px 0;
+    color: transparent;
+    width: 100%;
+    height: 8.3px;
+    cursor: pointer;
+  }
+  input[type=range].volume::-ms-fill-lower {
+    background: #413d37;
+    border: 0;
+    border-radius: 15.2px;
+  }
+  input[type=range].volume::-ms-fill-upper {
+    background: #241802;
+    border: 0;
+    border-radius: 15.2px;
+  }
+  input[type=range].volume::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type=range].volume:focus::-ms-fill-lower {
+    background: #111110;
+  }
+  input[type=range].volume:focus::-ms-fill-upper {
+    background: #2b2213;
+  }
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range].volume {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+  
+  .lower-volume {
+      color: #fff;
+      font-size: 25px;
+      transform: translate(20px, -11px);
+      text-shadow: 3px 3px 0 #000;
+  }
+
+  .rise-volume {
+      color: #fff;
+      font-size: 25px;
+      transform: translate(100px, -57px);
+      text-shadow: 3px 3px 0 #000;
+  }
+
+  .volume-input {
+      width: 35px;
+      transform: translate(47px, 10px);
+      border-radius: 10px;
+  }
+
+  .audio-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    width: 98%;
+    height: 330px;
+  }
+
+  .music-containers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+:root {
+  --mt: 15px;
+}
+
+  .music-container:nth-child(1) {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.137);
+  }
+
+  .music-container:nth-child(2) {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    margin-top: calc(var(--mt) + 30px);
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.137);
+  }
+
+  .music-container:nth-child(3) {
+    position: absolute;
+    top: 0;
+    margin-top: calc(var(--mt) + 75px);
+    margin-bottom: 30px;
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.137);
+  }
+
+  .play-music {
+    color: white;
+    width: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  #the-piano-lady {
+    margin-left: 400px;
+    width: 300px;
+    height: 20px;
+    transform: translate(0, -20px)
+  }
+
+  #the-piano-lady-seekbar {
+    transform: translate(200px, -70px);
+    z-index: 100;
+  }
+
+  #time {
+    transform: translate(163px, -107px);
+    color: white;
+  }
+
+  .info-container {
+    display: flex;
+    transform: translate(340px, -35px)
+  }
+
+  .info-container p{
+    color: white;
+    margin-left: 70px;
+  }
+
+  .play-music1 {
+    color: white;
+    width: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  #dance-with-me {
+    margin-left: 400px;
+    width: 300px;
+    height: 20px;
+    transform: translate(0, -20px)
+  }
+
+  #dance-with-me-seekbar {
+    transform: translate(200px, -70px);
+    z-index: 200;
+  }
+
+  #time1 {
+    transform: translate(163px, -107px);
+    color: white;
+  }
+
+  .info-container1 {
+    display: flex;
+    transform: translate(340px, -35px)
+  }
+
+  .info-container1 p{
+    color: white;
+    margin-left: 70px;
+  }
+
+  .play-music2 {
+    color: white;
+    width: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  #chemistry {
+    margin-left: 400px;
+    width: 300px;
+    height: 20px;
+    transform: translate(0, -20px)
+  }
+
+  #chemistry-seekbar {
+    transform: translate(200px, -70px);
+    z-index: 200;
+  }
+
+  #time2 {
+    transform: translate(163px, -107px);
+    color: white;
+  }
+
+  .info-container2 {
+    display: flex;
+    transform: translate(340px, -35px)
+  }
+
+  .info-container2 p{
+    color: white;
+    margin-left: 70px;
+  }
+
+.copy {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-size: 20px;
+}
